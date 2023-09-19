@@ -64,7 +64,6 @@
   };
   services.xserver.enable = true;
   services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.errorcodezero = {
@@ -141,7 +140,7 @@
     pkgs.rofi-wayland
     pkgs.waybar
     pkgs.pamixer
-    pkgs.dunst
+    pkgs.mako
     pkgs.libnotify
     pkgs.wlr-randr
     pkgs.gcc
@@ -149,6 +148,7 @@
     pkgs.qbittorrent
     pkgs.brightnessctl
     pkgs.gh
+    pkgs.imagemagick
   ];
 
   programs.fish.enable = true;

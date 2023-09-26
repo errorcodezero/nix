@@ -89,13 +89,18 @@
       pkgs.anki
       pkgs.signal-desktop
       pkgs.obsidian
+      pkgs.logseq
       pkgs.steam
       pkgs.prismlauncher
       pkgs.catppuccin-kde
-      pkgs.python3
-      pkgs.python310Packages.pip
+      pkgs.spotify
+      pkgs.yt-dlp
+      pkgs.amberol
+      pkgs.bottles
     ];
   };
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   services.syncthing = {
      enable = true;
@@ -149,6 +154,12 @@
     pkgs.brightnessctl
     pkgs.gh
     pkgs.imagemagick
+    pkgs.openssl
+    pkgs.ffmpeg
+    pkgs.spotdl
+    pkgs.scrcpy
+    pkgs.android-tools
+    pkgs.go-mtpfs
   ];
 
   programs.fish.enable = true;
